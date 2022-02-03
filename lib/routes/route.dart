@@ -3,10 +3,9 @@ import 'package:autoroute/Screen/home_screen.dart';
 import 'package:autoroute/Screen/second_screen.dart';
 
 @MaterialAutoRouter(
-  replaceInRouteName: 'Page,Route',
+  replaceInRouteName: 'Page,routes',
   routes: <AutoRoute>[
-    // AutoRoute(path: '/', page: SplashPage, initial: true),
-    AutoRoute(path: '/homeScreen', page: HomeScreen),
+    AutoRoute(path: '/', page: HomeScreen, initial: true),
     AutoRoute(path: '/secondScreen', page: SecondScreen),
   ],
 )

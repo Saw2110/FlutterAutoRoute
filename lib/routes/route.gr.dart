@@ -34,20 +34,20 @@ class Router extends _i3.RootStackRouter {
 
   @override
   List<_i3.RouteConfig> get routes => [
-        _i3.RouteConfig(HomeScreen.name, path: '/homeScreen'),
+        _i3.RouteConfig(HomeScreen.name, path: '/'),
         _i3.RouteConfig(SecondScreen.name, path: '/secondScreen')
       ];
 }
 
-/// generated route for
+/// generated routes for
 /// [_i1.HomeScreen]
 class HomeScreen extends _i3.PageRouteInfo<void> {
-  const HomeScreen() : super(HomeScreen.name, path: '/homeScreen');
+  const HomeScreen() : super(HomeScreen.name, path: '/');
 
   static const String name = 'HomeScreen';
 }
 
-/// generated route for
+/// generated routes for
 /// [_i2.SecondScreen]
 class SecondScreen extends _i3.PageRouteInfo<void> {
   const SecondScreen() : super(SecondScreen.name, path: '/secondScreen');
