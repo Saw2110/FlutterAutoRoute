@@ -1,4 +1,7 @@
 # AutoRoute
+    - AutoRoute for Mobile Apps(Android & IOS) with responsive (Mobile,Tablet and Desktop)
+
+    /// Helps to generate Navigator Page
     flutter packages pub run build_runner watch.
 
 
