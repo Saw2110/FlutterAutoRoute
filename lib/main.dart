@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'routes/route.gr.dart' as appRoute;
 
 void main() {
+  setPathUrlStrategy();
   runApp(MyApp());
 }
 

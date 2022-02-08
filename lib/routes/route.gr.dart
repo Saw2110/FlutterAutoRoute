@@ -39,7 +39,7 @@ class Router extends _i3.RootStackRouter {
       ];
 }
 
-/// generated routes for
+/// generated route for
 /// [_i1.HomeScreen]
 class HomeScreen extends _i3.PageRouteInfo<void> {
   const HomeScreen() : super(HomeScreen.name, path: '/');
@@ -47,7 +47,7 @@ class HomeScreen extends _i3.PageRouteInfo<void> {
   static const String name = 'HomeScreen';
 }
 
-/// generated routes for
+/// generated route for
 /// [_i2.SecondScreen]
 class SecondScreen extends _i3.PageRouteInfo<void> {
   const SecondScreen() : super(SecondScreen.name, path: '/secondScreen');

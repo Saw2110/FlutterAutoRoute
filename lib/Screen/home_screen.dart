@@ -15,21 +15,58 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Home Screen")),
-      // body: Center(
-      //   child: ElevatedButton(
-      //     onPressed: () {
-      //       AutoRouter.of(context).push(const SecondScreen());
-      //       // context.router.pushNamed('/secondScreen');
-      //       // AutoRouter.of(context).replace(const SecondScreen());
-      //       // context.router.replaceNamed('/secondScreen');
-      //     },
-      //     child: const Text("Navigated to Second Screen"),
-      //   ),
-      // ),
       body: ResponsiveLayout(
-        mobileBody: Container(color: Colors.red),
-        tabletBody: Container(color: Colors.brown),
-        desktopBody: Container(color: Colors.green),
+        mobileBody: Container(
+          color: Colors.red,
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    AutoRouter.of(context).push(const SecondScreen());
+                    // context.router.pushNamed('/secondScreen');
+                    // AutoRouter.of(context).replace(const SecondScreen());
+                    // context.router.replaceNamed('/secondScreen');
+                  },
+                  child: const Text("Navigated to Second Screen"),
+                ),
+              ],
+            ),
+          ),
+        ),
+        tabletBody: Container(
+          color: Colors.brown,
+          child: Center(
+            child: ElevatedButton(
+              onPressed: () {
+                AutoRouter.of(context).push(const SecondScreen());
+                // context.router.pushNamed('/secondScreen');
+                // AutoRouter.of(context).replace(const SecondScreen());
+                // context.router.replaceNamed('/secondScreen');
+              },
+              child: const Text("Navigated to Second Screen"),
+            ),
+          ),
+        ),
+        desktopBody: Container(
+          color: Colors.green,
+          child: Center(
+            child: Row(
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    AutoRouter.of(context).push(const SecondScreen());
+                    // context.router.pushNamed('/secondScreen');
+                    // AutoRouter.of(context).replace(const SecondScreen());
+                    // context.router.replaceNamed('/secondScreen');
+                  },
+                  child: const Text("Navigated to Second Screen"),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
