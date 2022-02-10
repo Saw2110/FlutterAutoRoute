@@ -4,6 +4,7 @@ import 'package:url_strategy/url_strategy.dart';
 import 'routes/route.gr.dart' as appRoute;
 
 void main() {
+  //this remove # from the url in your web application
   setPathUrlStrategy();
   runApp(MyApp());
 }

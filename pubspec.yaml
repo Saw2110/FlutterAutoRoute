@@ -14,7 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   auto_route:
-
+#this package remove # in your url
   url_strategy: ^0.2.0
 
 dev_dependencies:
