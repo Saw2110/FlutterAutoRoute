@@ -28,7 +28,10 @@ class Router extends _i3.RootStackRouter {
     },
     SecondScreen.name: (routeData) {
       return _i3.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i2.SecondScreen());
+          routeData: routeData,
+          child: _i2.SecondScreen(
+            name: "name  argument",
+          ));
     }
   };
 

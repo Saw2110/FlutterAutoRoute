@@ -6,7 +6,7 @@ import 'package:autoroute/Screen/second_screen.dart';
   replaceInRouteName: 'Page,routes',
   routes: <AutoRoute>[
     AutoRoute(path: '/', page: HomeScreen, initial: true),
-    AutoRoute(path: '/secondScreen', page: SecondScreen),
+    AutoRoute(path: '/secondScreen', page: SecondScreen, name: "sa"),
   ],
 )
 class $Router {}
